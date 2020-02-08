@@ -17,7 +17,7 @@ from customplot import *
 
 
 class exercise():
-    __init__(self, name, push, pull, arms, chest, back, core, legs, cardio)
+   def __init__(self, name, push, pull, arms, chest, back, core, legs, cardio):
         self.name = name
         self.push = push
         self.pull = pull
