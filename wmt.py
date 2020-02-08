@@ -16,21 +16,33 @@ from customplot import *
 # In[ ]:
 
 
-class exercise():
-   def __init__(self, name, push, pull, arms, chest, back, core, legs, cardio):
-        self.name = name
-        self.push = push
-        self.pull = pull
-        self.arms = arms
-        self.chest = chest
-        self.back = back
-        self.core = core
-        self.legs = legs
-        self.cardio = cardio
+class exercise(self,name, push, pull, arms, chest, back, core, legs, cardio, favorite):
+    self.name = name
+    self.push = push
+    self.pull = pull
+    self.arms = arms
+    self.chest = chest
+    self.back = back
+    self.core = core
+    self.legs = legs
+    self.cardio = cardio
+    self.favorite = favorite
+
+    def isPush (self.push)
+    def isPull (self.pull)
+    def isFavorite (self.favorite)
 
 
 # In[2]:
 
+chest_press = exercise(name="chest press", push=True, pull=False, arms=True, chest=True, back=False, legs=False, core=True, cardio=False, favorite=False)
+# Variable names are optional, so it could look like this instead:
+# chest_press = exercise("chest_press", True, False, True, True, False, False, True, False, False)
+# One is easier to read imo, but again, this borders the opinion vs fact line
+
+print("Is {name} one of my favorites? {favorite}".format(name=chest_press.name, favorite=("yes" if chest_press.isFavorite True else "no")))
+#slightly more ocmplicated than I intended, but eh.
+# I also chose to use "isFavorite" because of readability, when you really could do the above with "chest_press.favorite" and get the same outcome
 
 wmt_dict = {'Exercise': {0: 'pushups',
     1: 'chest press',
