@@ -13,6 +13,21 @@ from sklearn.preprocessing import scale
 from customplot import *
 
 
+# In[ ]:
+
+
+class exercise(self,name, push, pull, arms, chest, back, core, legs, cardio):
+    self.name = name
+    self.push = push
+    self.pull = pull
+    self.arms = arms
+    self.chest = chest
+    self.back = back
+    self.core = core
+    self.legs = legs
+    self.cardio = cardio
+
+
 # In[2]:
 
 
